@@ -85,3 +85,23 @@ void inorder(Node **head)
     printf("%d\t", temp->data);
     inorder(&temp->right);
 }
+
+void tree_init(Node **head)
+{
+    insert(head, 17);
+    insert(head, 28);
+    insert(head, 14);
+    insert(head, 38);
+    insert(head, 10);
+    insert(head, 22);
+    insert(head, 1);
+    insert(head, 13);
+    insert(head, 44);
+    insert(head, 30);
+    insert(head, 8);
+    printf("Created tree:\n");
+    inorder(head);
+    printf("\n");
+}
+
+

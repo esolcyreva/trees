@@ -6,20 +6,7 @@ Node *head = NULL;
 
 int main()
 {
-    insert(&head, 17);
-    insert(&head, 28);
-    insert(&head, 14);
-    insert(&head, 38);
-    insert(&head, 10);
-    insert(&head, 22);
-    insert(&head, 1);
-    insert(&head, 13);
-    insert(&head, 44);
-    insert(&head, 30);
-    insert(&head, 8);
-    printf("Created tree:\n");
-    inorder(&head);
-    printf("\n");
+    tree_init(&head);
     printf("Deleting 1 with right child:\n");
     del(&head, 1);
     inorder(&head);
