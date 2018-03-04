@@ -94,7 +94,7 @@ void tree_init(Node **head)
     insert(head, 38);
     insert(head, 10);
     insert(head, 22);
-    insert(head, 1);
+    insert(head, 4);
     insert(head, 13);
     insert(head, 44);
     insert(head, 30);

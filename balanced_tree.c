@@ -15,7 +15,11 @@ static int get_height(Node **head)
     }
     lheight = get_height(&temp->left);
     rheight = get_height(&temp->right);
-    return (lheight + rheight + 1);
+    if (lheight > rheight) {
+        return lheight + 1;
+    } else {
+        return rheight + 1;
+    }
 
 }
 
